@@ -1,4 +1,4 @@
-export default{
+const Colors = {
   white: '#fff',
   softWhite: '#f4f4f4',
   grey: '#ccc',
@@ -17,3 +17,5 @@ export default{
   nude: '#F2D6A2',
   marsala: '#980A55'
 }
+
+export default Colors;

@@ -17,7 +17,6 @@ function CharacterList() {
     fetchCharacters()
   },[])
   
-  console.warn(characters)
   if (loading) {
     return null
   }
@@ -39,6 +38,7 @@ function CharacterList() {
           )
         }  
       </CharsContainer> 
+      <Separator y={20}/>
     </Container>  
   );
 }

@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 import { Colors } from '../../resources'
+import { Link } from 'react-router-dom'
+
+export const Anchor = styled(Link)`
+  text-decoration: none;
+`
 
 export const CardContainer = styled.div`
   background-color: ${ Colors.black };

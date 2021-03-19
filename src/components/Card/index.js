@@ -1,12 +1,15 @@
-import {CardContainer, CardImg, Name} from "./styles";
-import {parseImage} from "../../utils";
+import { CardContainer, CardImg, Name, Anchor} from "./styles";
+import { parseImage } from "../../utils";
 
 function Card({character}) {
+
   return (
-    <CardContainer>
-      <Name>{character.name}</Name>
-      <CardImg img={parseImage(character.thumbnail)}/>
-    </CardContainer>
+    <Anchor to={`character/${character.id}`}>
+      <CardContainer>
+        <Name>{character.name}</Name>
+        <CardImg img={parseImage(character.thumbnail)}/>
+      </CardContainer>
+    </Anchor>
   )
 }
 
