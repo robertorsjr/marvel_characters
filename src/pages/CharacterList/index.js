@@ -17,13 +17,13 @@ function CharacterList() {
     fetchCharacters()
   },[offset])
 
-const scrollToTop= (num)=>{
-  setOffset(offset + num)
-  window.scroll({
-      top:0,
-      behavior:'smooth'
-  })
-}
+  const scrollToTop= (num)=>{
+    setOffset(offset + num)
+    window.scroll({
+        top:0,
+        behavior:'smooth'
+    })
+  }
 
   if (loading) {
     return null
