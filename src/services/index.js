@@ -9,8 +9,8 @@ const api = axios.create({baseURL: process.env.REACT_APP_API_URL});
 const params = `?apikey=${publicKey}&hash=${hash}&ts=${ts}`
 
 export const endpoints = {
-  characters: `/characters${params}`,
+  characters:(offset) => `/characters${params}&offset=${offset}`,
   characterById: (id) => `/characters/${id}${params}`,
 }
-console.log(params)
+
 export default api;
