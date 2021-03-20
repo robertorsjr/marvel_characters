@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { BackButton, CharBio, CharsContainer, Container, FlexBox, Separator } from '../../components';
+import { BackButton, CharBio, CharsContainer, Container, FlexBox, Separator, CharComics } from '../../components';
 import { useRouteMatch } from 'react-router';
 import { getCharactersById, getCharComics } from '../../services/characters'
-import CharComics from '../../components/CharComics';
 
 function Character() {
   const [character, setCharacter] = useState({})
@@ -20,8 +19,6 @@ function Character() {
     }
     fetchCharacterById()
   },[params.id])
-
-  console.warn(charComics)
 
   return (
     <Container text={'Character Bio'}>

@@ -1,5 +1,6 @@
 export { default as CharsContainer } from './CharsContainer'
 export { default as CharBio } from './CharBio'
+export { default as CharComics } from './CharComics'
 export { default as Container } from './Container'
 export { default as Card } from './Card'
 export { default as BackButton } from './BackButton'

@@ -23,7 +23,6 @@ export const CardContainer = styled.div`
   &:hover{
     background-color: ${ Colors.darkRed };
   }
-
 `
 
 export const CardImg = styled.div`

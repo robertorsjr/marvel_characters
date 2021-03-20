@@ -12,7 +12,6 @@ export const Switch = styled.div`
   border: 2px solid ${ Colors.white };
   color: ${ Colors.white };
   cursor: pointer;
-
   transition: 0.4s;
 
   &:hover{

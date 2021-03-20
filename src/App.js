@@ -5,9 +5,9 @@ import GlobalStyle from './styles/global'
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Routes/>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes/>
+      </BrowserRouter>
     <GlobalStyle/>
     </> 
   );

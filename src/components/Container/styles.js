@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   justify-content:center;
   flex-direction:column;
 `
+
 export const TextContainter = styled.div`
   border: 3px solid ${ Colors.white };
   background: ${ Colors.red };

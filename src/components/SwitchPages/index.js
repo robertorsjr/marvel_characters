@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch } from './styles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
-import { faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 function SwitchPages({reverse, onClick, to}) {
   return (

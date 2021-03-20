@@ -10,7 +10,7 @@ function Container({text, children}) {
         <Title>{text}</Title>
       </TextContainter>
       <Separator y={20}/>
-      {children}
+        {children}
       <Separator y={20}/>
     </Wrapper>
   );

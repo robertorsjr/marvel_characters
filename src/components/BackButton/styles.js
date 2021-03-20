@@ -6,6 +6,7 @@ export const ButtonContainer = styled(Link)`
   text-decoration: none;
   color: ${ Colors.black };
   align-self: flex-end;
+  
   &:hover{
     color: ${ Colors.red };
   }
