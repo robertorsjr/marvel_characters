@@ -37,6 +37,7 @@ function CharacterList() {
           characters.length > 0 && characters.map(character =>
             <Card
               key={character.id}
+              to={`character/${character.id}`}
               character={character}
             />  
           )

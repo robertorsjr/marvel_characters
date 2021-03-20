@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 export const Anchor = styled(Link)`
   text-decoration: none;
+  max-width: 216px;
 `
 
 export const CardContainer = styled.div`
@@ -38,7 +39,8 @@ export const CardImg = styled.div`
   }
 `
 
-export const Name = styled.span`
+export const Name = styled.div`
+  margin-left: 5px;
   font-size: 20px;
   font-weight: bold;
   color: ${ Colors.white };

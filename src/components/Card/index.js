@@ -1,15 +1,15 @@
 import { CardContainer, CardImg, Name, Anchor} from "./styles";
 import { parseImage } from "../../utils";
 
-function Card({character}) {
+function Card({character , to}) {
 
   return (
-    <Anchor to={`character/${character.id}`}>
+     <Anchor to={to && to}> 
       <CardContainer>
-        <Name>{character.name}</Name>
+        <Name>{character.name || character.title }</Name>
         <CardImg img={parseImage(character.thumbnail)}/>
       </CardContainer>
-    </Anchor>
+    </Anchor> 
   )
 }
 

@@ -5,6 +5,7 @@ const FlexBox = styled.div`
   width: 100%;
   justify-content: ${({justifyContent})=> justifyContent || 'space-between'};
   flex-direction: ${({flexDirection})=> flexDirection  || 'row' };
+  flex-wrap: ${({flexWrap})=> flexWrap || 'wrap' };
 `
 
 export default FlexBox;

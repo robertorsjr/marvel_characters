@@ -1,21 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { BackButton, CharBio, CharsContainer, Container, FlexBox, Separator } from '../../components';
 import { useRouteMatch } from 'react-router';
-import { getCharactersById } from '../../services/characters'
+import { getCharactersById, getCharComics } from '../../services/characters'
+import CharComics from '../../components/CharComics';
 
 function Character() {
   const [character, setCharacter] = useState({})
+  const [charComics, setCharComics] = useState({})
   const { params } = useRouteMatch()
 
   useEffect(()=> {
     async function fetchCharacterById(){
-      const response = await getCharactersById(params.id)
+      const [response, respComics ] = await Promise.all([
+        getCharactersById(params.id),
+        getCharComics(params.id)
+      ]) 
       setCharacter(response.data.data.results)
+      setCharComics(respComics.data.data.results)
     }
     fetchCharacterById()
   },[params.id])
 
-  console.warn(character)
+  console.warn(charComics)
 
   return (
     <Container text={'Character Bio'}>
@@ -31,7 +37,7 @@ function Character() {
           )
         }
         <Separator y={30}/>
-        Comics
+        <CharComics comics={charComics}/>
         </FlexBox>
       </CharsContainer>
     </Container>

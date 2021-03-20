@@ -5,6 +5,7 @@ function Routes(){
     return (
         <Switch>
             <Route path="/character/:id+" component={Character}/>
+            <Route path="/:page+" component={CharacterList}/>
             <Route path="/" component={CharacterList} exact/>
         </Switch>
     );

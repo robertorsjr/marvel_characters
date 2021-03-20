@@ -11,6 +11,7 @@ const params = `?apikey=${publicKey}&hash=${hash}&ts=${ts}`
 export const endpoints = {
   characters:(offset) => `/characters${params}&offset=${offset}`,
   characterById: (id) => `/characters/${id}${params}`,
+  charComics: (id) => `/characters/${id}/comics${params}`,
 }
 
 export default api;
