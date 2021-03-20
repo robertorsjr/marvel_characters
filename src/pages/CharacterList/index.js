@@ -6,7 +6,7 @@ function CharacterList() {
   const [characters, setCharacters] = useState({})
   const [loading, setLoading] = useState(false);
   const [offset, setOffset] = useState(0)
-
+  
   useEffect(()=> {
     async function fetchCharacters(){
       setLoading(true)
@@ -17,7 +17,7 @@ function CharacterList() {
     fetchCharacters()
   },[offset])
 
-  const scrollToTop= (num)=>{
+  const scrollToTop = (num)=>{
     setOffset(offset + num)
     window.scroll({
         top:0,
@@ -25,10 +25,10 @@ function CharacterList() {
     })
   }
 
+  
   if (loading) {
     return null
   }
-  console.warn(offset)
 
   return (
     <Container text={'Marvel Characters'}>
@@ -43,8 +43,8 @@ function CharacterList() {
           )
         }
         <FlexBox justifyContent={'space-between'}>
-          {offset >= 20 ? <SwitchPages onClick={()=> scrollToTop(-20)} reverse={true}/> : <div/> }
-          <SwitchPages onClick={()=> scrollToTop(20)} reverse={false}/>
+          {offset >= 20 ? <SwitchPages to={`/page${offset}`} onClick={()=> scrollToTop(-20)} reverse={true}/> : <div/> }
+          <SwitchPages to={`/page${offset}`} onClick={()=> scrollToTop(20)} reverse={false}/>
         </FlexBox>  
       </CharsContainer> 
     </Container>  
