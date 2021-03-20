@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CharBio, CharsContainer, Container } from '../../components';
+import { BackButton, CharBio, CharsContainer, Container, FlexBox, Separator } from '../../components';
 import { useRouteMatch } from 'react-router';
 import { getCharactersById } from '../../services/characters'
 
@@ -20,6 +20,8 @@ function Character() {
   return (
     <Container text={'Character Bio'}>
       <CharsContainer>
+        <FlexBox flexDirection={'column'}>
+        <BackButton to='../' text={'Home'}/>
         {
           character.length > 0 && character.map(char =>  
             <CharBio 
@@ -27,7 +29,10 @@ function Character() {
               character={char}
             />
           )
-        }  
+        }
+        <Separator y={30}/>
+        Comics
+        </FlexBox>
       </CharsContainer>
     </Container>
   );
