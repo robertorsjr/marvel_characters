@@ -12,7 +12,7 @@ function CharBio({character}) {
       <TextContainter>
         {character.name && <Text>{character.name}</Text>}
         <Separator y={30}/>
-        {character.description && <Text>{character.description}</Text>}
+        {character.description ? <Text>{character.description}</Text> : <Separator x={710}/>}
       </TextContainter>
     </Container>
   );
