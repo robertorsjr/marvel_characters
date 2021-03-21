@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   background: ${ Colors.softWhite };
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 `

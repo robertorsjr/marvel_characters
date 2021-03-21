@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   align-items:center;
   flex-direction: row;
+  max-width: 950px;
 `
 
 export const ImgContainer = styled.div`
@@ -12,17 +13,20 @@ export const ImgContainer = styled.div`
   border-radius: 10px;
   background: ${({img}) => `url(${img})`} no-repeat;
   background-size: cover;
-  min-width: 150px;
-  min-height: 225px;
+  /* min-width: 150px;
+  min-height: 225px; */
+  min-width: 264px;
+  min-height: 400px;
 `
 
 export const TextContainter = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
+  align-items: center;
+  justify-content: center;
 `
 
 export const Text = styled.span`
   font-size: 20px;
+  
 `

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BackButton, CharBio, ItemContainer, Container, FlexBox, Separator, CharComics, HomeButton } from '../../components';
+import { CharBio, ItemContainer, Container, FlexBox, Separator, CharComics, TopButtons } from '../../components';
 import { useRouteMatch } from 'react-router-dom'
 import { getComic, getComicCharacters } from '../../services/comics'
 
@@ -20,12 +20,11 @@ function Comic() {
     fetchComicById()
   },[params.id])
 
-
   return (
     <Container text={'Comic'}>
       <ItemContainer>
         <FlexBox flexDirection={'column'}>
-          <BackButton text={'Back'}/>  
+          <TopButtons/>
           {
             comic.length > 0 && comic.map(char =>  
               <CharBio 

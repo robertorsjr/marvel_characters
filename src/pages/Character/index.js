@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BackButton, CharBio, ItemContainer, Container, FlexBox, Separator, CharComics } from '../../components';
+import { CharBio, ItemContainer, Container, FlexBox, Separator, CharComics, TopButtons } from '../../components';
 import { useRouteMatch } from 'react-router';
 import { getCharactersById, getCharComics } from '../../services/characters'
 
@@ -24,7 +24,7 @@ function Character() {
     <Container text={'Character Bio'}>
       <ItemContainer>
         <FlexBox flexDirection={'column'}>
-        <BackButton text={'Back'}/>
+        <TopButtons/>
         {
           character.length > 0 && character.map(char =>  
             <CharBio 

@@ -7,8 +7,9 @@ export const Button = styled.div`
   align-items: center;
   justify-content: center;
   background: ${ Colors.darkRed };
-  width: 160px;
-  height: 100px;
+  width: 50px;
+  height: 30px;
+  align-self: center;
   border-radius: 20px;
   border: 2px solid ${ Colors.white };
   color: ${ Colors.white };

@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 
 export const Anchor = styled(Link)`
   text-decoration: none;
-  max-width: 216px;
+  width: 216px;
 `
 
 export const CardContainer = styled.div`
   background-color: ${ Colors.black };
   border: 2px solid ${ Colors.black };
   height: 324px;
+  width: 216px;
   border-radius: 10px;
   margin: 10px 0;
   padding-top: 10px;
