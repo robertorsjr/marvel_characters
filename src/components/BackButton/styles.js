@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { Colors } from '../../resources';
 
-export const ButtonContainer = styled(Link)`
+export const ButtonContainer = styled.div`
   text-decoration: none;
   color: ${ Colors.black };
   align-self: flex-end;

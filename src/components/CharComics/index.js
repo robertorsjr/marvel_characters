@@ -3,6 +3,7 @@ import { FlexBox, Card, Separator } from '../../components'
 import { Container, Title } from './styles'
  
 function CharComics({comics}) {
+  console.warn(comics)
   return (
     <Container>
     {
@@ -16,6 +17,7 @@ function CharComics({comics}) {
         comics.length > 0 && comics.map(comic => 
           <Card
             key={comic.id}
+            to={`comic/${comic.id}`}
             character={comic}
           />
         )

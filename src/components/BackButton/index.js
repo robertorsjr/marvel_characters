@@ -1,9 +1,17 @@
 import React from 'react';
+import {  useHistory } from 'react-router-dom'
 import { ButtonContainer, Text } from './styles';
 
-function BackButton({to,text}) {
+function BackButton({ text }) {
+  const history = useHistory()
+  console.warn(history)
+  
+  const NavigateBack = () =>{
+    history.goBack()
+  }
+
   return (
-    <ButtonContainer to={`${to}`}>
+    <ButtonContainer onClick={NavigateBack}>
         <Text>{text}</Text>
     </ButtonContainer>
   );
