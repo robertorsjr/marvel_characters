@@ -4,7 +4,6 @@ import { ButtonContainer, Text } from './styles';
 
 function BackButton({ text }) {
   const history = useHistory()
-  console.warn(history)
   
   const NavigateBack = () =>{
     history.goBack()

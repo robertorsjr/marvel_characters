@@ -46,14 +46,14 @@ function CharacterList() {
           )
         }
         <FlexBox justifyContent={'space-between'}>
-        {
-          page > 1 ? (
-            <SwitchPages
-              onClick={() => navigate(-1)}
-              reverse={true}
-            />
-          ) : <Separator x={164}/>
-        }
+          {
+            page > 1 ? (
+              <SwitchPages
+                onClick={() => navigate(-1)}
+                reverse={true}
+              />
+            ) : <Separator x={160}/>
+          }
           <HomeButton/>
           <SwitchPages
             onClick={() => navigate(1)}

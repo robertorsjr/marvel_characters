@@ -7,7 +7,7 @@ function Routes(){
             <Redirect from={'/'} to={'/pages/1'} exact />
             <Route path="/character/:id+" component={Character}/>
             <Route path="/pages/:page+" component={CharacterList}/>
-            <Route path="/character/:id+/comic/:id+" component={Comic}/>
+            <Route path="/comic/:id+" component={Comic}/>
         </Switch>
     );
 }
