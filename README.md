@@ -38,7 +38,7 @@ Uma aplicação Web que consome a [API Marvel](https://developer.marvel.com/) e 
 
 ## Deploy da aplicação :rocket:
 
-- [Demo](https://marvel-characters-two.vercel.app/pages/1)
+ [<img src="https://img.shields.io/static/v1?label=Demo&message=Online&color=gren&style=for-the-badge&logo=Vercel"/>](https://marvel-characters-two.vercel.app/pages/1)
 
 
 ## Como rodar a aplicação
