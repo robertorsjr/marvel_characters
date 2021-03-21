@@ -71,7 +71,7 @@ No terminal
 
 ## Dependencias utilizadas :books:
 
-- [ReactJS](https://pt-br.reactjs.org/) - Biblioteca UI
+- [ReactJS](https://pt-br.reactjs.org/{:target="_blank"}) - Biblioteca UI
 - [@Fortawesome](https://fontawesome.com/) -  Icons
 - [Axios](https://github.com/axios/axios) - Http requests
 - [Crypto-js](https://www.npmjs.com/package/crypto-js) - MD5 para fazer a função do Hash
