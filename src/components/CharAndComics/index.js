@@ -3,7 +3,7 @@ import { FlexBox, Card, Separator } from '../../components'
 import { Container, Title } from './styles'
 import { useLocation } from 'react-router-dom'
  
-function CharComics({items, id}) {
+function CharAndComics({items, id}) {
 
   let location = useLocation().pathname
 
@@ -45,4 +45,4 @@ function CharComics({items, id}) {
   );
 }
 
-export default CharComics;
+export default CharAndComics;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Loading, CharBio, ItemContainer, Container, FlexBox, Separator, CharComics, BackButton } from '../../components';
+import { Loading, Bio, ItemContainer, Container, FlexBox, Separator, CharAndComics, BackButton } from '../../components';
 import { useRouteMatch } from 'react-router';
 import { getCharactersById, getCharComics } from '../../services/characters'
 
@@ -35,14 +35,14 @@ function Character() {
         <Separator y={20}/>
           {
             character.length > 0 && character.map(char =>  
-              <CharBio 
+              <Bio 
                 key={char.id}
-                character={char}
+                item={char}
               />
             )
           }
           <Separator y={10}/>
-          <CharComics items={charComics}/>
+          <CharAndComics items={charComics}/>
         </FlexBox>
       </ItemContainer>
     </Container>

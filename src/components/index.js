@@ -1,6 +1,6 @@
 export { default as ItemContainer } from './ItemContainer'
-export { default as CharBio } from './CharBio'
-export { default as CharComics } from './CharComics'
+export { default as Bio } from './Bio'
+export { default as CharAndComics } from './CharAndComics'
 export { default as Container } from './Container'
 export { default as Card } from './Card'
 export { default as BackButton } from './BackButton'

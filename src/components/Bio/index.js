@@ -3,19 +3,19 @@ import { Separator } from '../../components'
 import { Container, ImgContainer, TextContainter, Text } from './styles';
 import { parseImage } from "../../utils";
  
-function CharBio({character}) {
+function Bio({item}) {
   
   return (
     <Container>
-      <ImgContainer img={parseImage(character.thumbnail)}/>
+      <ImgContainer img={parseImage(item.thumbnail)}/>
       <Separator x={50}/>
       <TextContainter>
-        <Text isTitle={true}>{character.name ? character.name : character.title}</Text>
+        <Text isTitle={true}>{item.name ? item.name : item.title}</Text>
         <Separator y={30}/>
-        {character.description && <Text>{character.description}</Text>}
+        {item.description && <Text>{item.description}</Text>}
       </TextContainter>
     </Container>
   );
 }
 
-export default CharBio;
+export default Bio;

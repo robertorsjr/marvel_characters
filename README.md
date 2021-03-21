@@ -71,9 +71,9 @@ No terminal
 
 ## Dependencias utilizadas :books:
 
-- [ReactJS](https://pt-br.reactjs.org/{:target="_blank"}) - Biblioteca UI
+- [ReactJS](https://pt-br.reactjs.org/) - Biblioteca UI
 - [@Fortawesome](https://fontawesome.com/) -  Icons
-- [Axios](https://github.com/axios/axios{:target="_blank"}) - Http requests
+- [Axios](https://github.com/axios/axios) - Http requests
 - [Crypto-js](https://www.npmjs.com/package/crypto-js) - MD5 para fazer a função do Hash
 - [React-loader-spinner](https://github.com/mhnpd/react-loader-spinner) - Animação de Loading da pagina
 - [React-router-dom](https://reactrouter.com/web/guides/quick-start) - Navegação de paginas
