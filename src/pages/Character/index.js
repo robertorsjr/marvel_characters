@@ -6,13 +6,13 @@ import { getCharactersById, getCharComics } from '../../services/characters'
 function Character() {
   const [character, setCharacter] = useState({})
   const [charComics, setCharComics] = useState({})
-  const { params } = useRouteMatch()
   const [loading, setLoading] = useState(false);
+  const { params } = useRouteMatch()
 
   useEffect(()=> {
     async function fetchCharacterById(){
       setLoading(true)
-      const [response, respComics ] = await Promise.all([
+      const [response, respComics] = await Promise.all([
         getCharactersById(params.id),
         getCharComics(params.id)
       ]) 

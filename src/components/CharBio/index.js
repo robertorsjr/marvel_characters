@@ -10,7 +10,7 @@ function CharBio({character}) {
       <ImgContainer img={parseImage(character.thumbnail)}/>
       <Separator x={30}/>
       <TextContainter>
-        {character.name ? <Text>{character.name}</Text> : <Text>{character.title}</Text>}
+        <Text>{character.name ? character.name : character.title}</Text>
         <Separator y={30}/>
         {character.description && <Text>{character.description}</Text>}
       </TextContainter>

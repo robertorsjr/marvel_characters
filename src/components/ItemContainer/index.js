@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper } from './styles';
 
-function CharsContainer({children}) {
+function ItemContainer({children}) {
   return (
     <Wrapper>
       {children}
@@ -9,4 +9,4 @@ function CharsContainer({children}) {
   );
 }
 
-export default CharsContainer;
+export default ItemContainer;

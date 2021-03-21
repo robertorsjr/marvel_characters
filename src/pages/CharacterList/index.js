@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Card, ItemContainer, Container, FlexBox, SwitchPages, Separator, Loading } from '../../components'
+import { Card, ItemContainer, Container, FlexBox, SwitchPages, Loading } from '../../components'
 import { useHistory, useParams } from "react-router-dom";
 import { getCharacters } from '../../services/characters'
 
@@ -21,7 +21,7 @@ function CharacterList() {
     fetchCharacters()
   },[page])
 
-  const navigate = (num)=>{
+  const navigate = (num) => {
     history.push(`/pages/${Number(page) + num}`)
     window.scroll({
         top:0,
@@ -52,7 +52,7 @@ function CharacterList() {
                 onClick={() => navigate(-1)}
                 reverse={true}
               />
-            ) : <Separator x={160}/>
+            ) : <div/>
           }
           <SwitchPages
             onClick={() => navigate(1)}

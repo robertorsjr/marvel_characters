@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { Colors  } from '../resources'
+import { Colors  } from '..'
 
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 

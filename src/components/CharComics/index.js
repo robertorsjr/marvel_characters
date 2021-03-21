@@ -6,29 +6,36 @@ import { useLocation } from 'react-router-dom'
 function CharComics({items, id}) {
 
   let location = useLocation().pathname
+
+  const isComic = location === `/comic/${id}`
+  const hasItems = items.length > 0
   
   return (
     <Container>
-      { 
-        location === `/comic/${id}` ?
-          items.length > 0 
-          ? <Title>Characters who participated in the comic</Title>
-          : <Title>no participations in the comic</Title>
-      
-        :
-          items.length > 0 
-          ? <Title>Comics that the character participated</Title> 
-          : <Title>This character has no participation in comics</Title>
-      }
+      {isComic ? (
+        <Title>
+          { hasItems ? 
+            'Characters who participated in the comic'
+            : 
+            'No participations in the comic'
+          }
+        </Title>
+      ) : (
+        <Title>
+          { hasItems ? 
+            'Comics that the character participated'
+            : 
+            'This character has no participation in comics'
+          }
+        </Title>
+      )}
       <Separator y={5}/>
       <FlexBox  justifyContent={'center'}>
         {
-          items.length > 0 && items.map(item =>
+          hasItems && items.map(item =>
             <Card
               key={item.id}
-              to={ location === `/comic/${id}` 
-                ? `/character/${item.id}` 
-                : `/comic/${item.id}`}
+              to={isComic ? `/character/${item.id}` : `/comic/${item.id}`}
               character={item}
             />
           )

@@ -5,13 +5,13 @@ import { ButtonContainer, Text } from './styles';
 function BackButton({ text }) {
   const history = useHistory()
   
-  const NavigateBack = () =>{
+  const NavigateBack = () => {
     history.goBack()
   }
 
   return (
     <ButtonContainer onClick={NavigateBack}>
-        <Text>{text}</Text>
+      <Text>{text}</Text>
     </ButtonContainer>
   );
 }

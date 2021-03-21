@@ -8,7 +8,7 @@ function Card({character , to}) {
     <Separator y={360} x={236}>
      <Anchor to={to && to}> 
       <CardContainer>
-        <Name>{character.name || character.title }</Name>
+        <Name>{character.name || character.title}</Name>
         <CardImg img={parseImage(character.thumbnail)}/>
       </CardContainer>
     </Anchor> 
