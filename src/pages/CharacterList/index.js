@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Card, ItemContainer, Container, FlexBox, SwitchPages, HomeButton, Separator, Loading } from '../../components'
+import { Card, ItemContainer, Container, FlexBox, SwitchPages, Separator, Loading } from '../../components'
 import { useHistory, useParams } from "react-router-dom";
 import { getCharacters } from '../../services/characters'
 
@@ -54,7 +54,6 @@ function CharacterList() {
               />
             ) : <Separator x={160}/>
           }
-          <HomeButton size={'1x'}/>
           <SwitchPages
             onClick={() => navigate(1)}
             reverse={false}

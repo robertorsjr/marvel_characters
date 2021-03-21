@@ -1,5 +1,5 @@
 import React from 'react';
-import { Separator } from '../../components'
+import { HomeButton, Separator } from '../../components'
 import { Wrapper, TextContainter, Title } from './styles'
 
 function Container({text, children}) {
@@ -9,6 +9,8 @@ function Container({text, children}) {
       <TextContainter>
         <Title>{text}</Title>
       </TextContainter>
+      <Separator y={20}/>
+      <HomeButton/>
       <Separator y={20}/>
         {children}
       <Separator y={20}/>

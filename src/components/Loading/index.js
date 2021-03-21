@@ -1,13 +1,16 @@
 import React from 'react';
 import Loader from 'react-loader-spinner'
 import { Colors } from '../../resources'
-import { ItemContainer } from '../../components';
+import { ItemContainer, Separator } from '../../components';
 
 function Loading() {
   return (
-    <ItemContainer>
-      <Loader  type="Rings" color={ Colors.darkRed } height={640} width={500}/>
-    </ItemContainer>
+    <>
+      <Separator y={70}/>
+      <ItemContainer>
+        <Loader  type="Rings" color={ Colors.darkRed } height={640} width={500}/>
+      </ItemContainer>
+    </>
   );
 }
 

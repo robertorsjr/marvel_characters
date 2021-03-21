@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Loading, CharBio, ItemContainer, Container, FlexBox, Separator, CharComics, TopButtons } from '../../components';
+import { Loading, CharBio, ItemContainer, Container, FlexBox, Separator, CharComics, BackButton } from '../../components';
 import { useRouteMatch } from 'react-router-dom'
 import { getComic, getComicCharacters } from '../../services/comics'
 
@@ -31,7 +31,8 @@ function Comic() {
     <Container text={'Comic'}>
       <ItemContainer>
         <FlexBox flexDirection={'column'}>
-          <TopButtons/>
+        <BackButton text={'Back'}/>
+        <Separator y={20}/>
           {
             comic.length > 0 && comic.map(char =>  
               <CharBio 

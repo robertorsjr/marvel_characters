@@ -4,7 +4,7 @@ import { Colors } from '../../resources'
 export const Wrapper = styled.div`
   padding: 20px;
   border-radius: 10px;
-  max-width: 950px;
+  width: 70%;
   margin: 0 auto;
   background: ${ Colors.softWhite };
   display: flex;

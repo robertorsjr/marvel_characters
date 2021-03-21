@@ -21,7 +21,7 @@ function CharComics({items, id}) {
           : <Title>This character has no participation in comics</Title>
       }
       <Separator y={5}/>
-      <FlexBox  justifyContent={'flex-start'}>
+      <FlexBox  justifyContent={'center'}>
         {
           items.length > 0 && items.map(item =>
             <Card

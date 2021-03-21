@@ -10,7 +10,7 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    height:100%;
+    min-height:100vh;
     background: linear-gradient(-225deg, ${Colors.turquoise}, ${Colors.darkRed}) no-repeat;
     font-family: 'Bebas Neue';
   }

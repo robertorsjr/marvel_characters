@@ -8,5 +8,6 @@ export const Container = styled.div`
 `
 
 export const Title = styled.div`
+  max-width: 100%;
   font-size: 40px;
 `;
