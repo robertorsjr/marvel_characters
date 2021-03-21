@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+<h1>Marvel Characters</h1> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+  <img src="https://img.shields.io/static/v1?label=Vercel&message=deploy&color=blue&style=for-the-badge&logo=vercel"/>
+  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=JavaScript&message=ok&color=gren&style=for-the-badge&logo=javaScript"/>
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
 
-## Available Scripts
 
-In the project directory, you can run:
+### Tópicos 
 
-### `yarn start`
+:small_blue_diamond: [Descrição da aplicação](#descrição-do-aplicação)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+:small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-rocket)
 
-### `yarn test`
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Descrição da aplicação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Uma aplicação Web que consome a [API Marvel](https://developer.marvel.com/) e lista seus personagens e quadrinhos.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Funcionalidades
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+:heavy_check_mark: Navegação na lista de personagens.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+:heavy_check_mark: Quadrinhos onde o personagem aparece.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+:heavy_check_mark: Quais personagens estão no quadrinho.  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+:heavy_check_mark: Descrição de personagens e Quadrinhos.  
 
-## Learn More
+## Deploy da aplicação :rocket:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Demo](https://marvel-characters-two.vercel.app/pages/1)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Como rodar a aplicação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Primeiro crie uma conta na [API Marvel](https://developer.marvel.com/) para obter sua chave publica e privada.
 
-### Analyzing the Bundle Size
+No terminal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+# Para instalar dependencias 
 
-### Making a Progressive Web App
+  yarn
+  # ou se vc estiver usando NPM 
+  npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Criando a variavel de ambiente.
+  
+  Crie um arquivo .env na raiz do projeto com as seguintes linhas.
 
-### Advanced Configuration
+  REACT_APP_PUBLIC_KEY='SuaChavePublica'
+  REACT_APP_PRIVATE_KEY='SuaChavePrivada'
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Para rodar a aplicação 
 
-### Deployment
+  yarn start
+  # ou com NPM
+  npm run start
+```
+**A aplicação deve abrir no "http://localhost:3000" 🎉🎉🎉**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Dependencias utilizadas :books:
 
-### `yarn build` fails to minify
+- [ReactJS](https://pt-br.reactjs.org/) - Biblioteca UI
+- [@Fortawesome](https://fontawesome.com/) -  Icons
+- [Axios](https://github.com/axios/axios) - Http requests
+- [Crypto-js](https://www.npmjs.com/package/crypto-js) - MD5 para fazer a função do Hash
+- [React-loader-spinner](https://github.com/mhnpd/react-loader-spinner) - Animação de Loading da pagina
+- [React-router-dom](https://reactrouter.com/web/guides/quick-start) - Navegação de paginas
+- [Styled-components](https://styled-components.com/) - CSS na biblioteca JS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Desenvolvedor
+
+Responsável pelo desenvolvimento do projeto
+
+| [<img src="https://avatars.githubusercontent.com/u/71423080?s=460&u=a5c60b93356615006839056572a3cca064879b7b&v=4" width=115><br><sub>Roberto</sub>](https://github.com/robertorsjr) |  
+| :---: | :---: | :---: 
