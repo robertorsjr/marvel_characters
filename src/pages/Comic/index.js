@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CharBio, ItemContainer, Container, FlexBox, Separator, CharComics, TopButtons } from '../../components';
+import { Loading, CharBio, ItemContainer, Container, FlexBox, Separator, CharComics, TopButtons } from '../../components';
 import { useRouteMatch } from 'react-router-dom'
 import { getComic, getComicCharacters } from '../../services/comics'
 
@@ -7,18 +7,25 @@ function Comic() {
   const [comic, setComic] = useState({})
   const [comicCharacters, setComicCharacters] = useState({})
   const { params } = useRouteMatch()
+  const [loading, setLoading] = useState(false);
 
   useEffect(()=> {
     async function fetchComicById(){
+      setLoading(true)
       const [response, respComics ] = await Promise.all([
         getComic(params.id),
         getComicCharacters(params.id)
       ]) 
       setComic(response.data.data.results)
       setComicCharacters(respComics.data.data.results)
+      setLoading(false)
     }
     fetchComicById()
   },[params.id])
+  
+  if (loading) {
+    return <Loading/>
+  }
 
   return (
     <Container text={'Comic'}>

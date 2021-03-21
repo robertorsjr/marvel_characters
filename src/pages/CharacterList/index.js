@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Card, ItemContainer, Container, FlexBox, SwitchPages, HomeButton, Separator } from '../../components'
+import { Card, ItemContainer, Container, FlexBox, SwitchPages, HomeButton, Separator, Loading } from '../../components'
 import { useHistory, useParams } from "react-router-dom";
 import { getCharacters } from '../../services/characters'
 
@@ -30,7 +30,7 @@ function CharacterList() {
   }
 
   if (loading) {
-    return null
+    return <Loading/>
   }
 
   return (
