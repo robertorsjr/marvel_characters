@@ -4,7 +4,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { Button } from './styles';
 import { useHistory } from 'react-router-dom'
 
-function HomeButton() {
+function HomeButton({size}) {
   const history = useHistory()
 
   const handleClick = () => {
@@ -13,7 +13,7 @@ function HomeButton() {
 
   return (
     <Button onClick={handleClick}>
-      <FontAwesomeIcon icon={faHome} size={'3x'} />
+      <FontAwesomeIcon icon={faHome} size={size} />
     </Button>
   );
 }

@@ -5,9 +5,9 @@ function Routes(){
     return (
         <Switch>
             <Redirect from={'/'} to={'/pages/1'} exact />
-            <Route path="/character/:id+" component={Character}/>
-            <Route path="/pages/:page+" component={CharacterList}/>
-            <Route path="/comic/:id+" component={Comic}/>
+            <Route path="/character/:id+" component={Character} exact/>
+            <Route path="/pages/:page+" component={CharacterList} exact/>
+            <Route path="/comic/:id+" component={Comic}exact/>
         </Switch>
     );
 }

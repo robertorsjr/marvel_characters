@@ -1,24 +1,27 @@
 import React from 'react';
 import { FlexBox, Card, Separator } from '../../components'
 import { Container, Title } from './styles'
+import { useLocation } from 'react-router-dom'
  
-function CharComics({comics}) {
- 
+function CharComics({items, id}) {
+
+  let location = useLocation().pathname
+  
   return (
     <Container>
     {
-      comics.length > 0 
+      items.length > 0 
       ? <Title>Comics that the character participated</Title> 
       : <Title>This character has no participation in comics</Title>
     }
     <Separator y={20}/>
     <FlexBox >
       {
-        comics.length > 0 && comics.map(comic => 
+        items.length > 0 && items.map(item => 
           <Card
-            key={comic.id}
-            to={`/comic/${comic.id}`}
-            character={comic}
+            key={item.id}
+            to={ location === `/comic/${id}` ? `/character/${item.id}` : `/comic/${item.id}`}
+            character={item}
           />
         )
       }

@@ -54,7 +54,7 @@ function CharacterList() {
               />
             ) : <Separator x={160}/>
           }
-          <HomeButton/>
+          <HomeButton size={'3x'}/>
           <SwitchPages
             onClick={() => navigate(1)}
             reverse={false}

@@ -34,7 +34,7 @@ function Character() {
           )
         }
         <Separator y={10}/>
-        <CharComics comics={charComics} id={params.id}/>
+        <CharComics items={charComics}/>
         </FlexBox>
       </ItemContainer>
     </Container>
