@@ -83,5 +83,5 @@ No terminal
 
 Responsável pelo desenvolvimento do projeto
 
-| [<img src="https://avatars.githubusercontent.com/u/71423080?s=460&u=a5c60b93356615006839056572a3cca064879b7b&v=4" width=115><br><sub>Roberto</sub>](https://github.com/robertorsjr) |  
-| :---: | :---: | :---: 
+[<img src="https://avatars.githubusercontent.com/u/71423080?s=460&u=a5c60b93356615006839056572a3cca064879b7b&v=4" width=115><br><sub>Roberto</sub>](https://github.com/robertorsjr) 
+
