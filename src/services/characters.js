@@ -1,8 +1,8 @@
 import api, {endpoints} from "./index";
 
-export async function getCharacters(offset) {
+export async function getCharacters(page) {
   const { get } = await api
-  return get(endpoints.characters(offset))
+  return get(endpoints.characters(page))
 }
 
 export async function getCharactersById(id){

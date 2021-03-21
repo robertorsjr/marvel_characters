@@ -1,52 +1,66 @@
 import React, { useState, useEffect } from 'react'
-import { Card, CharsContainer, Container, FlexBox, SwitchPages } from '../../components'
+import { Card, ItemContainer, Container, FlexBox, SwitchPages, HomeButton, Separator } from '../../components'
+import { useHistory, useParams } from "react-router-dom";
 import { getCharacters } from '../../services/characters'
 
 function CharacterList() {
   const [characters, setCharacters] = useState({})
   const [loading, setLoading] = useState(false);
-  const [offset, setOffset] = useState(0)
+ 
+  const { page = 1 } = useParams();
   
+  const history = useHistory()
+
   useEffect(()=> {
     async function fetchCharacters(){
       setLoading(true)
-      const response = await getCharacters(offset)
+      const response = await getCharacters(page)
       setCharacters(response.data.data.results)
       setLoading(false)
     }
     fetchCharacters()
-  },[offset])
+  },[page])
 
-  const scrollToTop = (num)=>{
-    setOffset(offset + num)
+  const navigate = (num)=>{
+    history.push(`/pages/${Number(page) + num}`)
     window.scroll({
         top:0,
         behavior:'smooth'
     })
   }
 
-  
   if (loading) {
     return null
   }
 
   return (
     <Container text={'Marvel Characters'}>
-      <CharsContainer>
+      <ItemContainer>
         {
           characters.length > 0 && characters.map(character =>
             <Card
               key={character.id}
-              to={`character/${character.id}`}
+              to={`/character/${character.id}`}
               character={character}
             />  
           )
         }
         <FlexBox justifyContent={'space-between'}>
-          {offset >= 20 ? <SwitchPages to={`/page${offset}`} onClick={()=> scrollToTop(-20)} reverse={true}/> : <div/> }
-          <SwitchPages to={`/page${offset}`} onClick={()=> scrollToTop(20)} reverse={false}/>
+        {
+          page > 1 ? (
+            <SwitchPages
+              onClick={() => navigate(-1)}
+              reverse={true}
+            />
+          ) : <Separator x={164}/>
+        }
+          <HomeButton/>
+          <SwitchPages
+            onClick={() => navigate(1)}
+            reverse={false}
+          />
         </FlexBox>  
-      </CharsContainer> 
+      </ItemContainer> 
     </Container>  
   );
 }

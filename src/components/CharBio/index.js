@@ -4,7 +4,7 @@ import { Container, ImgContainer, TextContainter, Text } from './styles';
 import { parseImage } from "../../utils";
 
 function CharBio({character}) {
-  console.warn(character)
+  
   return (
     <Container>
       <ImgContainer img={parseImage(character.thumbnail)}/>
