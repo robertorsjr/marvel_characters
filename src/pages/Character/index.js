@@ -31,17 +31,17 @@ function Character() {
     <Container text={'Character Bio'}>
       <ItemContainer>
         <FlexBox flexDirection={'column'}>
-        <TopButtons/>
-        {
-          character.length > 0 && character.map(char =>  
-            <CharBio 
-              key={char.id}
-              character={char}
-            />
-          )
-        }
-        <Separator y={10}/>
-        <CharComics items={charComics}/>
+          <TopButtons/>
+          {
+            character.length > 0 && character.map(char =>  
+              <CharBio 
+                key={char.id}
+                character={char}
+              />
+            )
+          }
+          <Separator y={10}/>
+          <CharComics items={charComics}/>
         </FlexBox>
       </ItemContainer>
     </Container>

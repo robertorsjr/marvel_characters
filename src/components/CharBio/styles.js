@@ -13,8 +13,6 @@ export const ImgContainer = styled.div`
   border-radius: 10px;
   background: ${({img}) => `url(${img})`} no-repeat;
   background-size: cover;
-  /* min-width: 150px;
-  min-height: 225px; */
   min-width: 264px;
   min-height: 400px;
 `

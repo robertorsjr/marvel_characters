@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Colors } from '../../resources';
 
 export const ButtonContainer = styled.div`
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   background: ${ Colors.darkRed };
