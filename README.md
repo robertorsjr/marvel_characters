@@ -4,20 +4,20 @@
   <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
   <img src="https://img.shields.io/static/v1?label=Vercel&message=deploy&color=blue&style=for-the-badge&logo=vercel"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-  <img src="http://img.shields.io/static/v1?label=JavaScript&message=ok&color=gren&style=for-the-badge&logo=javaScript"/>
+  <img src="http://img.shields.io/static/v1?label=JavaScript&message=linguagem&color=gren&style=for-the-badge&logo=javaScript"/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
 
 ### Tópicos 
 
-:small_blue_diamond: [Descrição da aplicação](#descrição-do-aplicação)
+:small_blue_diamond: [Descrição da aplicação](#descrição-da-aplicação)
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
 :small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-rocket)
 
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação)
 
 
 
